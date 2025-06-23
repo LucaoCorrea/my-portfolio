@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lucas Leonardi - Portfólio</title>
+    <link rel="icon" href="./assets/chess-king-solid.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="https://www.linkedin.com/in/lucas-leonard-dev/"
+          >Lucas Leonardi</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav align-items-center gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#about" data-pt="Sobre" data-en="About"
+                >Sobre</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#skills"
+                data-pt="Habilidades"
+                data-en="Skills"
+                >Habilidades</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#experience"
+                data-pt="Experiência"
+                data-en="Experience"
+                >Experiência</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#education"
+                data-pt="Formação"
+                data-en="Education"
+                >Formação</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#projects"
+                data-pt="Projetos"
+                data-en="Projects"
+                >Projetos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#contact"
+                data-pt="Contato"
+                data-en="Contact"
+                >Contato</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle d-flex align-items-center gap-1"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <img
+                  id="flag-current"
+                  src="./assets/brazil-.png"
+                  alt="Português"
+                  width="24"
+                  height="24"
+                />
+                PT
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-items-center gap-2"
+                    href="#"
+                    onclick="toggleLang('pt')"
+                  >
+                    <img
+                      src="./assets/brazil-.png"
+                      alt="Português"
+                      width="24"
+                      height="24"
+                    />
+                    Português
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-items-center gap-2"
+                    href="#"
+                    onclick="toggleLang('en')"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/323/323310.png"
+                      alt="Inglês"
+                      width="24"
+                      height="24"
+                    />
+                    English
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <i
+                id="theme-toggle"
+                class="fas fa-moon theme-icon"
+                title="Toggle Theme"
+                style="cursor: pointer"
+              ></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="about" class="container text-center my-5">
+      <img
+        src="https://media.licdn.com/dms/image/v2/D4E03AQExu01KIEQMYw/profile-displayphoto-shrink_400_400/B4EZc2O4SSHIAk-/0/1748961560294?e=1756339200&v=beta&t=IjyVSoOcW-vCveF95XewygmH0p1mDUlB1hCR0AX-OVw"
+        alt="Lucas Leonardi"
+        class="profile-img mb-4"
+      />
+      <h1 data-pt="Sobre mim" data-en="About me">Sobre mim</h1>
+      <p
+        data-pt="Desenvolvedor Backend com foco em Java e C#, Estagiário de Dados apaixonado por tecnologia, inovação, resolver problemas, construir soluções inteligentes e gerar impacto no mundo."
+        data-en="Backend Developer focused on Java and C#, Data Analyst Intern passionate about technology, innovation, problem-solving, building smart solutions and making an impact in the world."
+      >
+        Desenvolvedor Backend com foco em Java e C#, Estagiário de Dados
+        apaixonado por tecnologia, inovação, resolver problemas, construir
+        soluções inteligentes e gerar impacto no mundo.
+      </p>
+    </section>
+    <ul class="extra-list">
+      <li>
+        <a href="./termoo.html" data-pt="surpreenda-se" data-en="surprise"
+          >Surpreenda-se</a
+        >
+      </li>
+    </ul>
+
+    <section id="skills" class="container my-5">
+      <h2 data-pt="Habilidades" data-en="Skills">Habilidades</h2>
+      <ul>
+        <li
+          data-pt="Backend: C#, ASP.NET, Java, Spring Boot"
+          data-en="Backend: C#, ASP.NET, Java, Spring Boot"
+        >
+          Backend: C#, ASP.NET, Java, Spring Boot
+        </li>
+        <li
+          data-pt="Banco de Dados: SQL Server, PostgreSQL, MySQL, MongoDB e FireBase"
+          data-en="Databases: SQL Server, PostgreSQL, MySQL, MongoDB and FireBase"
+        >
+          Banco de Dados: SQL Server, PostgreSQL, MySQL, MongoDB e FireBase
+        </li>
+        <li
+          data-pt="Front-end: React Js, Angular, HTML, CSS, Bootstrap, Tailwind e JavaScript"
+          data-en="Frontend: React Js, Angular, HTML, CSS, Bootstrap, Tailwind and JavaScript"
+        >
+          Front-end: React Js, Angular, HTML, CSS, Bootstrap, Tailwind e JavaScript
+        </li>
+        <li
+          data-pt="Ferramentas: Git, GitHub, Docker, DevOps"
+          data-en="Tools: Git, GitHub, Docker, DevOps"
+        >
+          Ferramentas: Git, GitHub, Docker, DevOps
+        </li>
+        <li
+          data-pt="Soft Skills: Proatividade, Pragmatismo, Comunicação, Trabalho em Equipe"
+          data-en="Soft Skills: Proactivity, Pragmatism, Communication, Teamwork, pragmatic"
+        >
+          Soft Skills: Proatividade, Pragmatismo, Comunicação, Trabalho em
+          Equipe, Pragmático.
+        </li>
+      </ul>
+    </section>
+
+    <section id="experience" class="container my-5">
+      <h2 data-pt="Experiência Profissional" data-en="Professional Experience">
+        Experiência Profissional
+      </h2>
+      <div class="experience-item">
+        <div class="d-flex align-items-start">
+          <img
+            src="./assets/logo2.svg"
+            width="64"
+            height="64"
+            style="border-radius: 10px; margin-right: 20px"
+          />
+          <div>
+            <h4
+              data-pt="Desenvolvedor Backend | CEO"
+              data-en="Backend Developer | CEO"
+            >
+              Desenvolvedor Backend | CEO
+            </h4>
+            <h5>Sentinel Code</h5>
+            <p
+              class="experience-date"
+              data-pt="Abr 2025 - presente"
+              data-en="Apr 2025 - Present"
+            >
+              Abr 2025 - presente
+            </p>
+            <p
+              data-pt="CEO e Fundador da Sentinel Code, uma startup especializada no desenvolvimento de soluções tecnológicas com foco na integração de sistemas e na otimização de processos empresariais."
+              data-en="CEO and Founder of Sentinel Code, a startup specialized in technological solutions focused on system integration and business process optimization."
+            >
+              CEO e Fundador da Sentinel Code...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="d-flex align-items-start">
+          <img
+            src="https://yt3.googleusercontent.com/CHxbPwjKEl9wTQ-MrMcW0WWlkCywhgRtbFdDsroGxLLy6tomJboYQyuLoDL14VXUC2kXPvgi8g=s900-c-k-c0x00ffffff-no-rj"
+            width="64"
+            height="64"
+            style="border-radius: 10px; margin-right: 20px"
+          />
+          <div>
+            <h4
+              data-pt="Estagiário de Analista de Dados"
+              data-en="Data Analyst Intern"
+            >
+              Estagiário de Analista de Dados
+            </h4>
+            <h5>Açaí da Barra</h5>
+            <p
+              class="experience-date"
+              data-pt="Ago 2024 - presente"
+              data-en="Aug 2024 - Present"
+            >
+              Ago 2024 - presente
+            </p>
+            <p
+              data-pt="Desenvolvimento de dashboards, automações e análise de dados para suporte a decisões."
+              data-en="Dashboard development, automation and data analysis to support decision-making."
+            >
+              Desenvolvimento de dashboards...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="container my-5">
+      <h2 data-pt="Formação Acadêmica" data-en="Academic Background">
+        Formação Acadêmica
+      </h2>
+
+      <div class="education-item">
+        <div class="d-flex align-items-start">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpjBeVV2SPcsc5-liGRI195mhoIrbzE19G6g&s"
+            width="64px"
+            height="64px"
+            style="border-radius: 10px; margin-right: 20px"
+          />
+          <div>
+            <h4
+              data-pt="USC - Universidade do Sagrado Coração | Presencial"
+              data-en="USC - University of the Sacred Heart | On-Campus"
+            >
+              USC - Universidade do Sagrado Coração | Presencial
+            </h4>
+            <p
+              data-pt="Bacharelado em Ciência da Computação"
+              data-en="Bachelor's in Computer Science"
+            >
+              Bacharelado em Ciência da Computação
+            </p>
+            <p
+              class="education-date"
+              data-pt="2025 - 2028"
+              data-en="2025 - 2028"
+            >
+              2025 - 2028
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="education-item">
+        <div class="d-flex align-items-start">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpjBeVV2SPcsc5-liGRI195mhoIrbzE19G6g&s"
+            width="64px"
+            height="64px"
+            style="border-radius: 10px; margin-right: 20px"
+          />
+          <div>
+            <h4
+              data-pt="USC - Universidade do Sagrado Coração | EAD"
+              data-en="USC - University of the Sacred Heart | Online"
+            >
+              USC - Universidade do Sagrado Coração | EAD
+            </h4>
+            <p
+              data-pt="Bacharelado em Ciência da Computação"
+              data-en="Bachelor's in Computer Science"
+            >
+              Bacharelado em Ciência da Computação
+            </p>
+            <p
+              class="education-date"
+              data-pt="2024 - 2025"
+              data-en="2024 - 2025"
+            >
+              2024 - 2025
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="education-item">
+        <div class="d-flex align-items-start">
+          <img
+            src="https://media.licdn.com/dms/image/v2/C4E0BAQF4U5nCoUnc7g/company-logo_200_200/company-logo_200_200/0/1630584160676/etec_comendador_joao_rays_logo?e=2147483647&v=beta&t=MkI4zO4FA3_1PZGyRA_4Sqr1hMxYic_sodz4L3KETMY"
+            width="64px"
+            height="64px"
+            style="border-radius: 10px; margin-right: 20px"
+          />
+          <div>
+            <h4
+              data-pt="ETEC Comendador João Rays"
+              data-en="ETEC Comendador João Rays"
+            >
+              ETEC Comendador João Rays
+            </h4>
+            <p
+              data-pt="Técnico em Informática para Internet Integrado ao Ensino Médio."
+              data-en="Technical Degree in Internet Informatics Integrated with High School."
+            >
+              Técnico em Informática para Internet Integrado ao Ensino Médio.
+            </p>
+            <p
+              class="education-date"
+              data-pt="2021 - 2023"
+              data-en="2021 - 2023"
+            >
+              2021 - 2023
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container my-5">
+      <h2 class="text-center mb-4" data-pt="Projetos" data-en="Projects">
+        Projetos Pessoais
+      </h2>
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <div class="project-card">
+          <h5>Warden</h5>
+          <p
+            data-pt="Sistema completo de gestão de estoque, vendas, PDV e caixa. ASP.NET MVC."
+            data-en="Complete system for inventory, sales, POS, and cash register management. ASP.NET MVC."
+          >
+            Sistema completo de gestão de estoque, vendas, PDV e caixa. ASP.NET
+            MVC.
+          </p>
+          <div class="tech-icons">
+            <i class="fab fa-csharp" title="C#"></i>
+            <i class="fas fa-database" title="Database"></i>
+            <i class="fab fa-bootstrap" title="Bootstrap"></i>
+          </div>
+          <a
+            href="https://github.com/LucaoCorrea/Warden"
+            target="_blank"
+            class="btn-doc"
+          >
+            <i class="fab fa-github"></i>
+            <span data-pt="Documentação" data-en="Documentation"
+              >Documentação</span
+            >
+          </a>
+          <button
+            class="btn-deploy"
+            disabled
+            data-pt="Em breve"
+            data-en="Coming soon"
+          >
+            Em breve
+          </button>
+        </div>
+
+        <div class="project-card">
+          <h5>Sentinel</h5>
+          <p
+            data-pt="Sistema Backend para cadastro de Fornecedores e dependentes, para o controle de exames e créditos."
+            data-en="Backend system for registering suppliers and dependents, for managing exams and credits."
+          >
+            Sistema Backend para cadastro de Fornecedores e dependentes, para o
+            controle de exames e créditos.
+          </p>
+          <div class="tech-icons">
+            <i class="fab fa-java" title="Java"></i>
+            <i class="fab fa-github" title="GitHub"></i>
+            <i class="fas fa-server" title="Backend"></i>
+          </div>
+          <a
+            href="https://github.com/LucaoCorrea/Sentinel"
+            target="_blank"
+            class="btn-doc"
+          >
+            <i class="fab fa-github"></i>
+            <span data-pt="Documentação" data-en="Documentation"
+              >Documentação</span
+            >
+          </a>
+          <button
+            class="btn-deploy"
+            disabled
+            data-pt="Em breve"
+            data-en="Coming soon"
+          >
+            Em breve
+          </button>
+        </div>
+
+        <div class="project-card">
+          <h5>Desafio Itaú</h5>
+          <p
+            data-pt="Solução do desafio da empresa Itaú Unibancos, API RESTful para gerenciar transações bancárias."
+            data-en="Solution for the Itaú Unibanco challenge, a RESTful API to manage banking transactions."
+          >
+            Solução do desafio da empresa Itaú Unibancos, API RESTful para
+            gerenciar transações bancárias.
+          </p>
+          <div class="tech-icons">
+            <i class="fab fa-java" title="Java"></i>
+            <i class="fab fa-github" title="GitHub"></i>
+            <i class="fas fa-postgres" title="Backend"></i>
+          </div>
+          <a
+            href="https://github.com/LucaoCorrea/desafio-itau-backend"
+            target="_blank"
+            class="btn-doc"
+          >
+            <i class="fab fa-github"></i>
+            <span data-pt="Documentação" data-en="Documentation"
+              >Documentação</span
+            >
+          </a>
+          <button
+            class="btn-deploy"
+            disabled
+            data-pt="Em breve"
+            data-en="Coming soon"
+          >
+            Em breve
+          </button>
+        </div>
+
+        <div class="project-card">
+          <h5>Cabeleleila Leila Backend</h5>
+          <p
+            data-pt="Aplicação Backend para gerenciamento de Agendamentos e Financeiros de um Salão de Beleza."
+            data-en="Backend application for managing Appointments and Financials of a Beauty Salon."
+          >
+            Aplicação Backend para gerenciamento de Agendamentos e Financeiros
+            de um Salão de Beleza.
+          </p>
+          <div class="tech-icons">
+            <i class="fab fa-java" title="Java"></i>
+            <i class="fab fa-github" title="GitHub"></i>
+            <i class="fas fa-postgres" title="Database"></i>
+            <i class="fas fa-postman" title="Postman"></i>
+          </div>
+          <a
+            href="https://github.com/LucaoCorrea/CabeleleilaLeila-backend"
+            target="_blank"
+            class="btn-doc"
+          >
+            <i class="fab fa-github"></i>
+            <span data-pt="Documentação" data-en="Documentation"
+              >Documentação</span
+            >
+          </a>
+          <button
+            class="btn-deploy"
+            disabled
+            data-pt="Em breve"
+            data-en="Coming soon"
+          >
+            Em breve
+          </button>
+        </div>
+
+        <div class="project-card">
+          <h5>Cabeleleila Leila Frontend</h5>
+          <p
+            data-pt="Aplicação Frontend para gerenciamento de Agendamentos e Financeiros de um Salão de Beleza."
+            data-en="Frontend application for managing Appointments and Financials of a Beauty Salon."
+          >
+            Aplicação Frontend para gerenciamento de Agendamentos e Financeiros
+            de um Salão de Beleza.
+          </p>
+          <div class="tech-icons">
+            <i class="fab fa-js" title="JavaScript"></i>
+            <i class="fab fa-github" title="GitHub"></i>
+            <i class="fas fa-react" title="React"></i>
+          </div>
+          <a
+            href="https://github.com/LucaoCorrea/CabeleleilaLeila-frontend"
+            target="_blank"
+            class="btn-doc"
+          >
+            <i class="fab fa-github"></i>
+            <span data-pt="Documentação" data-en="Documentation"
+              >Documentação</span
+            >
+          </a>
+          <button
+            class="btn-deploy"
+            disabled
+            data-pt="Em breve"
+            data-en="Coming soon"
+          >
+            Em breve
+          </button>
+        </div>
+
+        <div class="project-card">
+          <h5>VoxCall</h5>
+          <p
+            data-pt='Serviço de "Call", feita pensando em servidores e clientes, perfeito para se comunicar em tempo real.'
+            data-en="Call service designed with servers and clients in mind, perfect for real-time communication."
+          >
+            Serviço de "Call", feita pensando em servidores e clientes, perfeito
+            para se comunicar em tempo real.
+          </p>
+          <div class="tech-icons">
+            <i class="fas fa-database" title="Database"></i>
+            <i class="fab fa-python" title="Python"></i>
+            <i class="fab fa-github" title="GitHub"></i>
+          </div>
+          <a
+            href="https://github.com/LucaoCorrea/VoxCall"
+            target="_blank"
+            class="btn-doc"
+          >
+            <i class="fab fa-github"></i>
+            <span data-pt="Documentação" data-en="Documentation"
+              >Documentação</span
+            >
+          </a>
+          <button
+            class="btn-deploy"
+            disabled
+            data-pt="Em breve"
+            data-en="Coming soon"
+          >
+            Em breve
+          </button>
+        </div>
+
+        <div class="project-card">
+          <h5>ChessJava</h5>
+          <p
+            data-pt="Projeto de Xadrez desenvolvido em Java, com regras completas e interface básica."
+            data-en="Chess project developed in Java, with full rules and basic interface."
+          >
+            Projeto de Xadrez desenvolvido em Java, com regras completas e
+            interface básica.
+          </p>
+          <div class="tech-icons">
+            <i class="fab fa-java" title="Java"></i>
+          </div>
+          <a
+            href="https://github.com/LucaoCorrea/ChessJava"
+            target="_blank"
+            class="btn-doc"
+          >
+            <i class="fab fa-github"></i>
+            <span data-pt="Documentação" data-en="Documentation"
+              >Documentação</span
+            >
+          </a>
+          <button
+            class="btn-deploy"
+            disabled
+            data-pt="Em breve"
+            data-en="Coming soon"
+          >
+            Em breve
+          </button>
+        </div>
+
+        <div class="project-card">
+          <h5>EmpregueiTCC</h5>
+          <p
+            data-pt="Sistema para gerenciamento de estágios e TCC, facilitando cadastro e controle."
+            data-en="System for managing internships and final projects, facilitating registration and control."
+          >
+            Sistema para gerenciamento de estágios e TCC, facilitando cadastro e
+            controle.
+          </p>
+          <div class="tech-icons">
+            <i class="fab fa-java" title="Java"></i>
+            <i class="fas fa-database" title="Database"></i>
+            <i class="fas fa-react" title="React"></i>
+          </div>
+          <a
+            href="https://github.com/LucaoCorrea/EmpregueiTCC"
+            target="_blank"
+            class="btn-doc"
+          >
+            <i class="fab fa-github"></i>
+            <span data-pt="Documentação" data-en="Documentation"
+              >Documentação</span
+            >
+          </a>
+          <button
+            class="btn-deploy"
+            disabled
+            data-pt="Em breve"
+            data-en="Coming soon"
+          >
+            Em breve
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container my-5">
+      <h2 data-pt="Contato" data-en="Contact">Contato</h2>
+      <p
+        data-pt="Fique à vontade para entrar em contato pelos canais abaixo:"
+        data-en="Feel free to reach out through the channels below."
+      >
+        Fique à vontade para entrar em contato pelos canais abaixo:
+      </p>
+      <ul class="list-unstyled d-flex flex-column gap-2">
+        <li>
+          <i class="fas fa-envelope"></i>
+          <span data-pt="Email:" data-en="Email:">Email:</span>
+          <a href="mailto:lucascorrea1505@gmail.com"
+            >lucascorrea1505@gmail.com</a
+          >
+        </li>
+        <li>
+          <i class="fab fa-linkedin"></i>
+          <span data-pt="LinkedIn:" data-en="LinkedIn:">LinkedIn:</span>
+          <a
+            href="https://www.linkedin.com/in/lucas-leonard-dev/"
+            target="_blank"
+            >lucas-leonard-dev</a
+          >
+        </li>
+        <li>
+          <i class="fab fa-github"></i>
+          <span data-pt="GitHub:" data-en="GitHub:">GitHub:</span>
+          <a href="https://github.com/LucaoCorrea" target="_blank"
+            >LucaoCorrea</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <footer class="text-center mt-5 mb-3 text-muted">
+      <p
+        style="color: #00bfff"
+        data-pt="© 2025 Lucas Leonardi. Todos os direitos reservados."
+        data-en="© 2025 Lucas Leonardi. All rights reserved."
+      >
+        © 2025 Lucas Leonardi. Todos os direitos reservados.
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <div
+      id="particles-js"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      "
+    ></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
